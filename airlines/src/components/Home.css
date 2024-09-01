@@ -1,0 +1,198 @@
+section{
+    width: 100vw;
+    height: 50rem;
+    display: flex;
+    justify-items:center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-image: url("../Images/flight4.png") !important; */
+    background-repeat: no-repeat;
+    background-size:190vw 90%;
+    
+}
+#primaryText{
+    font-weight: 300;
+    font-size: 5rem;
+    text-align: center;
+}
+#secondaryText{
+    color: red;
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: center;
+}
+.buttonGroup{
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.firstButton,.secondButton{
+    width: 15rem;
+    height: 4.5rem;
+    border-radius: 0.6rem;
+    background-color: #fff;
+    color:#000;
+    font-size: 1.4rem;
+}
+
+.secondButton{
+    background-color: #000;
+    color: #fff;
+}
+.firstButton:hover{
+    width: 15rem;
+    height: 4.5rem;
+    border-radius: 0.6rem;
+    background-color: black;
+    color:#fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.flightAnimation{
+    width: 50rem;
+    height: 15rem;
+    position: absolute;
+    animation:flight 6s linear infinite both;
+}
+
+/* Responsive */
+
+@media screen and (max-width:575px){
+    section{
+        background-image: none !important;
+        font-size: 2rem !important;
+    }
+    #primaryText{
+       font-weight:100;
+       margin-left: 1rem;
+       margin-right: 1rem;
+    }
+    #secondaryText{
+        color: red;
+        font-weight: 200;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    section{
+        background-image: none !important;
+        font-size: 2rem !important;
+    }
+    #primaryText{
+       font-weight:100;
+       margin-left: 2rem;
+       margin-right: 1rem;
+    }
+    #secondaryText{
+        color: red;
+        font-weight: 200;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    } 
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    section{
+        background-image: none !important;
+        font-size: 2rem !important;
+    }
+    #primaryText{
+       font-weight:100;
+       margin-left: 2rem;
+       margin-right: 1rem;
+    }
+    #secondaryText{
+        color: red;
+        font-weight: 200;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    } 
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    section{
+        background-image: none !important;
+        font-size: 2rem !important;
+    }
+    #primaryText{
+       font-weight:100;
+       margin-left: 2rem;
+       margin-right: 1rem;
+    }
+    #secondaryText{
+        color: red;
+        font-weight: 200;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    } 
+}
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    section{
+        background-image:none !important;
+        font-size: 2rem !important;
+    }
+    #primaryText{
+       font-weight:100;
+       margin-left: 2rem;
+       margin-right: 1rem;
+    }
+    #secondaryText{
+        color: red;
+        font-weight: 200;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    } 
+    @keyframes flight {
+        from{
+            transform: translate(-160%,0%);
+            transition: 0.5s;
+        }
+        to{
+            transform: translate(150%,-300%);
+            transition: 0.5s;
+        }
+    }
+}
+@media (min-width: 1400px){
+    section{
+        background-image: none !important;
+        font-size: 2rem !important;
+    }
+    #primaryText{
+       font-weight:100;
+       margin-left: 2rem;
+       margin-right: 1rem;
+    }
+    #secondaryText{
+        color: red;
+        font-weight: 200;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    } 
+    @keyframes flight {
+        from{
+            transform: translate(-160%,0%);
+            transition: 0.5s;
+        }
+        to{
+            transform: translate(200%,-300%);
+            transition: 0.5s;
+        }
+    }
+    
+}
+

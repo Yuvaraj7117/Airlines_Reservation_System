@@ -1,0 +1,70 @@
+.container1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("../Images/flight4.png");
+    background-repeat: no-repeat;
+    background-size: 190vw 90vh;
+}
+h3{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+form:hover{
+    box-shadow: 2px 3px 5px 5px gray;
+    transition: 0.5s;
+}
+form{
+    width: 35rem !important;
+    height:60%;
+    margin-top: 4rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* justify-content: center; */
+    line-height: 5rem;
+    align-items: center;
+    border: 1px solid gray;
+    background: #000;
+    color: #fff;
+}
+
+h3 span{
+    color: red;
+}
+input{
+    width: 20rem;
+    height: 3rem;
+    padding-left: 10px;
+    outline: none;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 1rem;
+}
+input:focus{
+    border: 2px solid rgb(0, 183, 255);
+}
+p{
+    margin-bottom: 2rem;
+}
+.submitButton{
+  background-color:rgb(239, 9, 9);
+  color: #fff;
+  width: 20rem;
+  height:3rem;
+  border-radius: 5px;
+  border: none;
+}
+.submitButton:active{
+    background-color: rgb(155, 17, 17);
+}
+a{
+    color: crimson;
+}
+a:hover{
+    cursor: pointer;
+}
